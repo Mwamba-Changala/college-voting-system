@@ -136,12 +136,12 @@ t2.setOnClickListener(new View.OnClickListener() {
                         try {
                             SQLiteDatabase db2 = dbHelper2.getReadableDatabase();
                             String projection[] = {"roll_no", "name", "division", "unique_code"};
-                            //String projection[] = {"id", "roll_no", "name", "email", "password"};
+                            
                             Cursor c1 = db2.query("all_student", projection, null, null, null, null, null);
 
-                           // final StringBuffer buffer = new StringBuffer();
+                           
                             while (c1.moveToNext()) {
-                                // buffer.append("id:" + c.getString(0) + "\n");
+                               
                                 roll_number = c1.getString(0);
                                 name = c1.getString(1);
                                 if(roll_number.matches(e1.getText().toString())&&name.matches(e2.getText().toString()))
@@ -183,18 +183,6 @@ t2.setOnClickListener(new View.OnClickListener() {
 
 
 
-//
-//                        SQLiteDatabase db = dbHelper.getWritableDatabase();
-//                        ContentValues values = new ContentValues();
-//                        values.put("roll_no", e1.getText().toString());
-//                        values.put("name", e2.getText().toString());
-//                        values.put("email", e3.getText().toString());
-//                        values.put("password", e4.getText().toString());
-//                        final long row = db.insert("student", null, values);
-//                        //System.out.println("row number is "+ row);
-//                        //  String msg=String.valueOf(row);
-//                        // Toast.makeText(MainActivity.this,msg,Toast.LENGTH_LONG).show();
-//                        Toast.makeText(MainActivity.this, "registration successful", Toast.LENGTH_LONG).show();
                     }
                     else {
                         Toast.makeText(MainActivity.this, "password not match", Toast.LENGTH_LONG).show();
