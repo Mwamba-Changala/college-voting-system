@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_margin="0dp"
+    android:gravity="center_vertical"
+
+    tools:context=".AddAdmin">
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getvalue"
+        android:src="@drawable/vote"/>
+
+
+    <EditText
+        android:id="@+id/stu_UserName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/avatar"
+        android:hint="Student Name"
+        />
+    <EditText
+        android:id="@+id/stu_pass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/lock1"
+        android:inputType="textPassword"
+        android:hint="Password"
+        />
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#42E6C4"
+        android:textColor="#FFFFFF"
+        android:hint="Add"
+        />
+
+    <TextView
+        android:id="@+id/sing_in1"
+        android:layout_width="fill_parent"
+        android:layout_height="201dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="120dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="BACK TO DASHBOARD"
+        android:textColor="#0C25A0"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
